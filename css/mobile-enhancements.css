@@ -61,6 +61,13 @@ video {
     .mobile-menu-content {
         overflow-y: auto;
         max-height: 100vh;
+        /* Hide scrollbar while maintaining functionality */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+    }
+    
+    .mobile-menu-content::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
     }
     
     /* Better touch targets */
