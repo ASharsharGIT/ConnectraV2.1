@@ -68,7 +68,7 @@
     background: linear-gradient(135deg, rgba(44, 62, 95, 0.85), rgba(107, 31, 60, 0.85));
     opacity: 0;
     transition: opacity 0.3s ease;
-    overflow-y: auto;
+    overflow: hidden; /* Changed from overflow-y: auto to hidden */
     padding: 1.5rem;
 }
 
@@ -152,20 +152,6 @@
 .metric .label {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
-}
-
-/* Custom Scrollbar for Overlay */
-.project-overlay::-webkit-scrollbar {
-    width: 6px;
-}
-
-.project-overlay::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.project-overlay::-webkit-scrollbar-thumb {
-    background: var(--primary-gold);
-    border-radius: 3px;
 }
 
 /* Responsive Adjustments */
